@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.calendar-wrapper {
+  display: flex;
+  height: 100vh;
+  background: #f5f7fb;
+}
+
+/* SIDEBAR */
+.calendar-sidebar {
+  width: 220px;
+  background: #ffffff;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.calendar-sidebar h3 {
+  margin-bottom: 20px;
+}
+
+.calendar-sidebar button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 8px;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.calendar-sidebar button.active,
+.calendar-sidebar button:hover {
+  background: #ecebff;
+  color: #5b5bf0;
+}
+
+/* MAIN */
+.calendar-main {
+  flex: 1;
+  padding: 20px;
+  background: #fff;
+}
+
+.calendar-header {
+  margin-bottom: 15px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: 80px repeat(5, 1fr);
+}
+
+/* HEADERS */
+.day-header {
+  text-align: center;
+  padding: 10px;
+  font-weight: 600;
+  border-bottom: 1px solid #ddd;
+}
+
+.time-col {
+  padding: 10px;
+  font-size: 13px;
+  color: #666;
+  border-right: 1px solid #ddd;
+}
+
+/* CELLS */
+.cell {
+  height: 70px;
+  border: 1px solid #eee;
+  padding: 4px;
+  position: relative;
+}
+
+/* EVENT */
+.event {
+  background: #ffe0c7;
+  padding: 6px;
+  border-radius: 6px;
+  font-size: 12px;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.event:hover {
+  background: #ffd2a8;
+}

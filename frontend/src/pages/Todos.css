@@ -1,0 +1,130 @@
+ * {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.layout {
+  display: flex;
+  height: 100vh;
+  background: #f5f7fb;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 230px;
+  background: #ffffff;
+  padding: 20px;
+  border-right: 1px solid #ddd;
+}
+
+.sidebar h3 {
+  margin-bottom: 20px;
+}
+
+.sidebar nav button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 8px;
+  background: none;
+  border: none;
+  text-align: left;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.sidebar nav button.active,
+.sidebar nav button:hover {
+  background: #ecebff;
+  color: #5b5bf0;
+}
+
+.logout {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* CENTER */
+.center {
+  flex: 1;
+  padding: 25px;
+  background: #fff;
+}
+
+.center header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new-btn {
+  background: #5b5bf0;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+.task-input {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.task {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.task:hover,
+.task.selected {
+  background: #f0f1ff;
+}
+
+.done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.empty {
+  margin-top: 20px;
+  color: #777;
+}
+
+/* RIGHT */
+.details {
+  width: 300px;
+  background: #fafafa;
+  padding: 25px;
+  border-left: 1px solid #ddd;
+}
+
+.details .title {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.delete {
+  margin-top: 20px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 6px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .sidebar, .details {
+    display: none;
+  }
+}
