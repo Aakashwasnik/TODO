@@ -64,6 +64,7 @@ export default function Todos() {
             onClick={() => window.location.href = "/calendar"}
           >
             Calendar
+
           </button>
 
           <button
@@ -90,7 +91,7 @@ export default function Todos() {
         <header>
           <h2>{view.toUpperCase()}</h2>
           <button className="new-btn" onClick={addTask}>
-            + New Task
+            + New Task Add
           </button>
         </header>
 
