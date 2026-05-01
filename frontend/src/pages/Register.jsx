@@ -10,7 +10,7 @@ export default function Register() {
   const handleRegister = async (e) => {
     e.preventDefault();
     setLoading(true);
-
+ 
     const email = e.target.email.value;
     const password = e.target.password.value;
 
