@@ -59,7 +59,7 @@ export default function Register() {
             <label>
               <input type="checkbox" /> Remember me
             </label>
-            <span className="link">Forgot your password?</span>
+            <span className="link">Forgot your password? </span>
           </div>
 
           <button type="submit" disabled={loading}>
